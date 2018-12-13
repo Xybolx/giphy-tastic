@@ -32,8 +32,7 @@ body {
     font-family: cursive, sans-serif;
   }
   h1 {
-    background: url("https://realtimevfx.com/uploads/default/original/2X/e/ef3eb390b5563abf9ec7b1356fb00173b2905e56.gif"), url("../images/nes3.gif");
-    background-blend-mode: overlay, overlay;
+    background: url("../images/nes3.gif");
     background-size: contain;
     background-repeat: round;
     font-size: 80px;
@@ -142,6 +141,9 @@ body {
     #game-form {
       width: 90%;
       height: 100%;
+    }
+    #game-image {
+      overflow: hidden;
     }
   }
   
