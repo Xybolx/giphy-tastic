@@ -10,7 +10,7 @@ $(document).ready(function () {
   
   
   var games = [
-      "super mario bros.", "mike tyson's punch out", "kid icarus", "excitebike", "super mario bros. 2", "the legend of zelda"
+      "super mario bros.", "mike tyson's punch out", "kid icarus", "excitebike", "super mario bros. 2", "the legend of zelda", "mega man", "duck hunt", "double dragon", "spy hunter", "tecmo bowl", "contra"
     
 
   ];
@@ -34,7 +34,7 @@ $(document).ready(function () {
     
     
     $(document).on("click", ".game-button", function () {
-      $("#games").empty();
+      // $("#games").empty();
     $("#powerGif")[0].play();
     // document.getElementById("nesPic").style.cssText = "display: block";  
       $("#nesPic").animate({height:"200px"});
