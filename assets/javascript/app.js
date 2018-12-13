@@ -96,19 +96,29 @@ $(document).ready(function () {
     event.preventDefault();
     $("#addGif")[0].play();
     var newGame = $("input").eq(0).val();
-    localStorage.setItem("input", newGame);
-
-    // if (newGame.length > 2) {
-      games.push(newGame);
-    // }
-
-    populateButtons(games, "game-button", "#game-buttons");
-
     
+    
+
+   if (newGame.length > 2) {
+      games.push(newGame);
+      console.log(games);
+   } 
+  
+  
+  
+  
+   populateButtons(games, "game-button", "#game-buttons");
+   
+   
   });
   
-  populateButtons(games, "game-button", "#game-buttons");
-
+  
+  
+  
+  
+  
+   populateButtons(games, "game-button", "#game-buttons");
+ 
   
   
 });
