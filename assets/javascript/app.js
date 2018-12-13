@@ -102,14 +102,19 @@ $(document).ready(function () {
    if (newGame.length > 2) {
       games.push(newGame);
       console.log(games);
-   } 
-  
-  
-  
-  
-   populateButtons(games, "game-button", "#game-buttons");
-   
-   
+      localStorage.clear();
+      localStorage.setItem("newGames", JSON.stringify(games));
+      localStorage.getItem("newGames");
+      
+       
+    } 
+
+    
+    
+    
+    
+    populateButtons(games, "game-button", "#game-buttons");
+    
   });
   
   
