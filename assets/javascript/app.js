@@ -34,6 +34,7 @@ $(document).ready(function () {
     
     $(document).on("click", ".game-button", function () {
     $("#games").empty();
+    $("#powerGif")[0].play();
     $(".game-button").removeClass("active");
     $(this).addClass("active");
 
@@ -89,12 +90,13 @@ $(document).ready(function () {
 
   $("#add-game").on("click", function (event) {
     event.preventDefault();
+    $("#addGif")[0].play();
     var newGame = $("input").eq(0).val();
     localStorage.setItem("input", newGame);
 
-    if (newGame.length > 2) {
+    // if (newGame.length > 2) {
       games.push(newGame);
-    }
+    // }
 
     populateButtons(games, "game-button", "#game-buttons");
 

@@ -129,4 +129,7 @@ body {
     background-blend-mode: multiply, multiply;
 
   }
+  #nesPic {
+    width: 100%;
+  }
   
