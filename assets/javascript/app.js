@@ -12,7 +12,6 @@ $(document).ready(function () {
     
 
   ];
-
   // function to make buttons and add to page
   function populateButtons(arrayToUse, classToAdd, areaToAddTo) {
     $(areaToAddTo).empty();
@@ -24,16 +23,21 @@ $(document).ready(function () {
       a.text(arrayToUse[i]);
       $(areaToAddTo).append(a);
     }
-
   }
+    
+    
 
-  $(document).on("click", ".game-button", function () {
+  
+  
+    
+    
+    $(document).on("click", ".game-button", function () {
     $("#games").empty();
     $(".game-button").removeClass("active");
     $(this).addClass("active");
 
     var type = $(this).attr("data-type");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=fuh24fesVB79bhfW3zSSXJZCZhnTqxHP&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=nes+game" + type + "&api_key=fuh24fesVB79bhfW3zSSXJZCZhnTqxHP&limit=10";
 
     $.ajax({
       url: queryURL,
@@ -90,7 +94,7 @@ $(document).ready(function () {
     }
 
     populateButtons(games, "game-button", "#game-buttons");
-
+    
   });
 
   populateButtons(games, "game-button", "#game-buttons");

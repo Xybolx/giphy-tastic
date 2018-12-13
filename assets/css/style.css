@@ -3,9 +3,33 @@ html{
   background-image: url('http://androidfact.com/wp-content/uploads/2014/04/black-galaxy-s5-background.png');
 }
 body {
-  font-family: 'voltaire', cursive;
+  font-family: 'voltaire', sans-serif;
   font-size: 15px;
+
     
+  }
+  h1{
+    color: yellow;
+    font-family: cursive;
+  }
+  h1 {
+    font-size: 80px;
+    color: lemonchiffon;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 60px yellow, 0 0 70px yellow;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
+    }
+    
+
   }
   
   #games {
@@ -17,6 +41,7 @@ body {
     padding: 10px;
     color: yellow;
     font-size: 10px;
+    
   }
   .game-image {
     float: left;
@@ -39,6 +64,8 @@ body {
     height: 30px;
     margin-bottom: 15px;
     font-size: 18px;
+    background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/red-burst-vector-background-cartoon-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-sun-retro-pattern-vector-background-seamless-loop_ewupmxr0x__F0000.png'), url('https://realtimevfx.com/uploads/default/original/2X/e/ef3eb390b5563abf9ec7b1356fb00173b2905e56.gif');
+    background-blend-mode: screen, multiply;
     
     
   }
@@ -48,11 +75,11 @@ body {
     padding: 5px 20px;
     margin: 0 10px 10px 0;
     font-size: 15px;
-    font-family: 'voltaire', cursive;
+    font-family: 'voltaire', sans-serif;
     color: yellow;
     cursor: pointer;
     background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/red-burst-vector-background-cartoon-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-sun-retro-pattern-vector-background-seamless-loop_ewupmxr0x__F0000.png'), url('https://realtimevfx.com/uploads/default/original/2X/e/ef3eb390b5563abf9ec7b1356fb00173b2905e56.gif');
-    background-blend-mode: multiply, screen;
+    background-blend-mode: multiply, multiply;
     border: 2px;
     border-radius: 5px;
     box-shadow: 2px 2px 3px white;
@@ -67,12 +94,12 @@ body {
   button.active {
     background: url('https://realtimevfx.com/uploads/default/original/2X/e/ef3eb390b5563abf9ec7b1356fb00173b2905e56.gif');
   }
-  button{
+  button {
     background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/red-burst-vector-background-cartoon-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-sun-retro-pattern-vector-background-seamless-loop_ewupmxr0x__F0000.png'), url('https://realtimevfx.com/uploads/default/original/2X/e/ef3eb390b5563abf9ec7b1356fb00173b2905e56.gif');
-    background-blend-mode: multiply, screen;
+    background-blend-mode: multiply, multiply;
 
   }
-  label{
+  label {
     color: yellow;
   }
   
