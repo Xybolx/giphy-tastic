@@ -73,6 +73,7 @@ $(document).ready(function () {
   });
 
   $(document).on("click", ".game-image", function () {
+    $("#toggleGif")[0].play();
 
     var state = $(this).attr("data-state");
 
