@@ -34,9 +34,9 @@ $(document).ready(function () {
     
     
     $(document).on("click", ".game-button", function () {
-      // $("#games").empty();
+    $("#games").empty();
     $("#powerGif")[0].play();
-    // document.getElementById("nesPic").style.cssText = "display: block";  
+    document.getElementById("nesPic").style.cssText = "display: block";  
       $("#nesPic").animate({height:"200px"});
       $("#nesPic").animate({height:"0px"});  
     $(".game-button").removeClass("active");
