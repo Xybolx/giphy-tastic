@@ -3,25 +3,43 @@ html{
   background-image: url('http://androidfact.com/wp-content/uploads/2014/04/black-galaxy-s5-background.png');
 }
 body {
-  font-family: 'voltaire', sans-serif;
+  font-family: cursive;
   font-size: 15px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 60px yellow, 0 0 70px yellow;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
+    }
+    
+
+  }
+  
 
     
-  }
+  
   h1{
     color: yellow;
     font-family: cursive;
   }
   h1 {
+    background: url("https://realtimevfx.com/uploads/default/original/2X/e/ef3eb390b5563abf9ec7b1356fb00173b2905e56.gif");
     font-size: 80px;
-    color: lemonchiffon;
+    color: whitesmoke;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
   }
   
-  @-webkit-keyframes glow {
+  @keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 60px yellow, 0 0 70px yellow;
     }
@@ -39,7 +57,7 @@ body {
   .game-item {
     float: left;
     padding: 10px;
-    color: yellow;
+    color: lemonchiffon;
     font-size: 10px;
     
   }
@@ -75,16 +93,34 @@ body {
     padding: 5px 20px;
     margin: 0 10px 10px 0;
     font-size: 15px;
-    font-family: 'voltaire', sans-serif;
-    color: yellow;
+    font-family: cursive;
+    color: lemonchiffon;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
     cursor: pointer;
     background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/red-burst-vector-background-cartoon-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-sun-retro-pattern-vector-background-seamless-loop_ewupmxr0x__F0000.png'), url('https://realtimevfx.com/uploads/default/original/2X/e/ef3eb390b5563abf9ec7b1356fb00173b2905e56.gif');
     background-blend-mode: multiply, multiply;
     border: 2px;
     border-radius: 5px;
     box-shadow: 2px 2px 3px white;
-
   }
+  
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 60px yellow, 0 0 70px yellow;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
+    }
+  }
+    
+
+  
+  
+
+  
   
   button:hover,
   input[type="submit"]:hover {
@@ -100,6 +136,6 @@ body {
 
   }
   label {
-    color: yellow;
+    color: lemonchiffon;
   }
   

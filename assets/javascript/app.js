@@ -37,7 +37,7 @@ $(document).ready(function () {
     $(this).addClass("active");
 
     var type = $(this).attr("data-type");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=nes+game" + type + "&api_key=fuh24fesVB79bhfW3zSSXJZCZhnTqxHP&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=fuh24fesVB79bhfW3zSSXJZCZhnTqxHP&limit=10";
 
     $.ajax({
       url: queryURL,
