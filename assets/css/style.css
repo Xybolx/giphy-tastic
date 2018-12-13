@@ -132,4 +132,21 @@ body {
   #nesPic {
     width: 100%;
   }
+  @media only screen and (max-width: 600px) {
+    .game-item {
+      display: inline-flex;
+    }
+    .game-button.active {
+      width: 100%;
+      height: 100%;
+    }
+    .game-button {
+      width: 100%;
+      height: 100%;
+    }
+    #game-form {
+      width: 90%;
+      height: 100%;
+    }
+  }
   
