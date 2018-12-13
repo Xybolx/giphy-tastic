@@ -7,6 +7,7 @@
 
 $(document).ready(function () {
   
+  
   var games = [
       "super mario bros.", "mike tyson's punch out", "kid icarus", "excitebike", "super mario bros. 2", "the legend of zelda"
     
@@ -88,6 +89,7 @@ $(document).ready(function () {
   $("#add-game").on("click", function (event) {
     event.preventDefault();
     var newGame = $("input").eq(0).val();
+    localStorage.setItem("input", newGame);
 
     if (newGame.length > 2) {
       games.push(newGame);
@@ -95,12 +97,13 @@ $(document).ready(function () {
 
     populateButtons(games, "game-button", "#game-buttons");
 
-    localStorage.setItem("input", newGame);
     
   });
-
-
+  
   populateButtons(games, "game-button", "#game-buttons");
+
+  
+  
 });
 
 
