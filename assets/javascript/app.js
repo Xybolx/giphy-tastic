@@ -94,8 +94,11 @@ $(document).ready(function () {
     }
 
     populateButtons(games, "game-button", "#game-buttons");
+
+    localStorage.setItem("input", newGame);
     
   });
+
 
   populateButtons(games, "game-button", "#game-buttons");
 });
