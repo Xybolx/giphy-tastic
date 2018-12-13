@@ -25,15 +25,19 @@ body {
 
     
   
-  h1{
-    color: yellow;
+  h2{
+    color: lemonchiffon;
     font-family: cursive;
   }
   h1 {
-    background: url("https://realtimevfx.com/uploads/default/original/2X/e/ef3eb390b5563abf9ec7b1356fb00173b2905e56.gif");
+    background: url("https://realtimevfx.com/uploads/default/original/2X/e/ef3eb390b5563abf9ec7b1356fb00173b2905e56.gif"), url("../images/nes3.gif");
+    background-blend-mode: overlay, multiply;
+    background-size: contain;
+    background-repeat: round;
     font-size: 80px;
     color: whitesmoke;
     text-align: center;
+    border: 5px lemonchiffon;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
@@ -69,6 +73,8 @@ body {
     float: right;
     width: 30%;
     padding: 20px;
+    
+    
   }
   
   label {
@@ -137,5 +143,8 @@ body {
   }
   label {
     color: lemonchiffon;
+  }
+  #nes3 {
+    float: left;
   }
   
