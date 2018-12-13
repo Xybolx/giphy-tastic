@@ -5,9 +5,7 @@ html{
 body {
   font-family: cursive, sans-serif;
   font-size: 15px;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  
 }
 
   
@@ -97,12 +95,9 @@ body {
     font-size: 15px;
     font-family: cursive, sans-serif;
     color: lemonchiffon;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
     cursor: pointer;
-    background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/red-burst-vector-background-cartoon-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-sun-retro-pattern-vector-background-seamless-loop_ewupmxr0x__F0000.png'), url('https://realtimevfx.com/uploads/default/original/2X/e/ef3eb390b5563abf9ec7b1356fb00173b2905e56.gif');
-    background-blend-mode: multiply, multiply;
+    background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/red-burst-vector-background-cartoon-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-sun-retro-pattern-vector-background-seamless-loop_ewupmxr0x__F0000.png');
+    background-size: contain;
     border: 2px;
     border-radius: 5px;
     box-shadow: 2px 2px 3px white;
@@ -125,8 +120,8 @@ body {
     background: url('https://realtimevfx.com/uploads/default/original/2X/e/ef3eb390b5563abf9ec7b1356fb00173b2905e56.gif');
   }
   button {
-    background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/red-burst-vector-background-cartoon-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-sun-retro-pattern-vector-background-seamless-loop_ewupmxr0x__F0000.png'), url('https://realtimevfx.com/uploads/default/original/2X/e/ef3eb390b5563abf9ec7b1356fb00173b2905e56.gif');
-    background-blend-mode: multiply, multiply;
+    background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/red-burst-vector-background-cartoon-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-sun-retro-pattern-vector-background-seamless-loop_ewupmxr0x__F0000.png');
+    background-size: contain;
 
   }
   #nesPic {
