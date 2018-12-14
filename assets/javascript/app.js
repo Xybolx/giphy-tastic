@@ -6,7 +6,8 @@
 //   "bionic commando", "tetris", "double dragon", "kung fu", "paperboy"//
 
 $(document).ready(function () {
-  document.getElementById("nesPic").style.cssText = "display: none";
+  // document.getElementById("nesPic").style.cssText = "display: none";
+  
   
   
   var games = [
@@ -37,9 +38,9 @@ $(document).ready(function () {
     $(document).on("click", ".game-button", function () {
     $("#games").empty();
     $("#powerGif")[0].play();
-    document.getElementById("nesPic").style.cssText = "display: block";  
-      $("#nesPic").animate({height:"200px"});
-      $("#nesPic").animate({height:"0px"});  
+    
+      // $("#nesPic").animate({height:"200px"});
+     
     $(".game-button").removeClass("active");
     $(this).addClass("active");
 

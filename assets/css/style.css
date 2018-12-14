@@ -32,10 +32,13 @@ body {
     font-family: cursive, sans-serif;
   }
   h1 {
-    background: url("../images/nes3.gif");
-    background-size: contain;
-    background-repeat: round;
-    font-size: 80px;
+    background: url("../images/run.gif"), url("../images/tv2.gif");
+    background-blend-mode: screen, screen;
+    background-size: contain, contain;
+    background-repeat: space, space;
+    background-position: center, right;
+    /* border: solid 8px rgb(88, 25, 25); */
+    font-size: 70px;
     color: whitesmoke;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -64,6 +67,11 @@ body {
     float: right;
     width: 30%;
     padding: 20px;
+    background: url("../images/nes3.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+     
     
     
     
@@ -71,35 +79,50 @@ body {
   
   label {
     display: block;
-    color: lemonchiffon;
-    margin-bottom: 10px;
+    color: red;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 15px;
     font-weight: 700;
+    font-size: 18px;
+    background: white;
+    background-clip: content-box;
+    background-position: right;
+    border: solid 5px transparent;
   }
+
+
   
   input[type="text"] {
-    width: 100%;
-    height: 30px;
-    margin-bottom: 15px;
+    width: 75%;
+    height: 25px;
+    color: red;
+    margin-bottom: 5px;
     font-size: 18px;
-    background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/red-burst-vector-background-cartoon-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-sun-retro-pattern-vector-background-seamless-loop_ewupmxr0x__F0000.png'), url('https://realtimevfx.com/uploads/default/original/2X/e/ef3eb390b5563abf9ec7b1356fb00173b2905e56.gif');
-    background-blend-mode: screen, multiply;
+    background-color: black
+    /* background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/red-burst-vector-background-cartoon-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-sun-retro-pattern-vector-background-seamless-loop_ewupmxr0x__F0000.png'), url('https://realtimevfx.com/uploads/default/original/2X/e/ef3eb390b5563abf9ec7b1356fb00173b2905e56.gif'); */
+    /* background-blend-mode: screen, multiply; */
     
     
   }
   
-  button,
+  
   input[type="submit"] {
     padding: 5px 20px;
-    margin: 0 10px 10px 0;
+    margin: 10px 10px 10px 0;
     font-size: 15px;
     font-family: cursive, sans-serif;
-    color: lemonchiffon;
+    color: red;
     cursor: pointer;
-    background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/red-burst-vector-background-cartoon-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-sun-retro-pattern-vector-background-seamless-loop_ewupmxr0x__F0000.png');
-    background-size: contain;
+    background: grey;
+    /* background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/red-burst-vector-background-cartoon-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-sun-retro-pattern-vector-background-seamless-loop_ewupmxr0x__F0000.png'); */
+    /* background-size: contain; */
     border: 2px;
     border-radius: 5px;
-    box-shadow: 2px 2px 3px white;
+    box-shadow: 2px 2px 3px black;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
   }
   
   
@@ -121,10 +144,20 @@ body {
   button {
     background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/red-burst-vector-background-cartoon-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-sun-retro-pattern-vector-background-seamless-loop_ewupmxr0x__F0000.png');
     background-size: contain;
-
+    color: yellow;
+    padding: 5px 20px;
+    margin: 0 10px 10px 0;
+    font-size: 15px;
+    font-family: cursive, sans-serif;
+    cursor: pointer;
+    border: 2px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px whitesmoke;
+    
   }
   #nesPic {
-    width: 100%;
+    width: 50%;
+    height: 50%;
     
    }
   @media only screen and (max-width: 768px) {
