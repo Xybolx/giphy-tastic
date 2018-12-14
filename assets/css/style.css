@@ -69,26 +69,39 @@ body {
     padding: 20px;
     background: url("../images/nes3.gif");
     background-size: cover;
+    mix-blend-mode: color;
     background-repeat: no-repeat;
     background-position: left;
+  }
+
+  
+    
+  
+    
      
     
     
     
-  }
   
   label {
     display: block;
     color: red;
-    width: 50%;
-    text-align: center;
+    width: 52%;
+    text-align: left;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    
+
+    
+    margin: left;
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 18px;
-    background: white;
-    background-clip: content-box;
+    background: transparent;
     background-position: right;
-    border: solid 5px transparent;
+    border: solid 8px transparent;
+    
   }
 
 
@@ -156,8 +169,8 @@ body {
     
   }
   #nesPic {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     
    }
   @media only screen and (max-width: 768px) {
