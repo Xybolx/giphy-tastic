@@ -32,6 +32,16 @@ body {
     
 
   }
+  @keyframes glow3 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 60px yellow, 0 0 70px yellow;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white, 0 0 80px white;
+    }
+    
+
+  }
 
   
   
@@ -78,7 +88,7 @@ body {
     background: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/red-burst-vector-background-cartoon-background-with-space-for-your-logo-or-title-nice-sunburst-vintage-style-sun-retro-pattern-vector-background-seamless-loop_ewupmxr0x__F0000.png");
     background-size: contain;
     background-repeat: round;
-    color: yellow;
+    color: whitesmoke;
   }
  
   
@@ -104,16 +114,13 @@ body {
   
   label {
     display: block;
-    color: red;
+    color: rgb(196, 39, 39);
     width: 52%;
     text-align: left;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-    margin: left;
+    margin: auto;
     margin-bottom: 15px;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 15px;
     background-position: right;
     border: solid 8px transparent;
     
