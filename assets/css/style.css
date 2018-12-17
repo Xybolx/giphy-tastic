@@ -5,8 +5,8 @@ html{
 }
 
 body {
-  font-family: cursive, sans-serif;
-  font-size: 15px;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 10px;
   
   
 }
@@ -30,10 +30,9 @@ body {
     color: lemonchiffon;
   }  
   
-  h2{
-    color: lemonchiffon;
-    font-family: cursive, sans-serif;
-  }
+ 
+    
+  
   h1 {
     background: url("../images/run.gif"), url("../images/tv2.gif");
     background-blend-mode: screen, screen;
@@ -41,7 +40,7 @@ body {
     background-repeat: space, space;
     background-position: center, right;
     /* border: solid 8px rgb(88, 25, 25); */
-    font-size: 70px;
+    font-size: 60px;
     color: whitesmoke;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -91,18 +90,13 @@ body {
     color: red;
     width: 52%;
     text-align: left;
-    background: url("../images/spot2.png");
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
-    
-
-    
     margin: left;
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 18px;
-    background: transparent;
     background-position: right;
     border: solid 8px transparent;
     
@@ -127,8 +121,8 @@ body {
   input[type="submit"] {
     padding: 5px 20px;
     margin: 10px 10px 10px 0;
-    font-size: 15px;
-    font-family: cursive, sans-serif;
+    font-size: 10px;
+    font-family: "Press Start 2P", sans-serif;
     color: red;
     cursor: pointer;
     background: grey;
@@ -164,8 +158,8 @@ body {
     color: yellow;
     padding: 5px 20px;
     margin: 0 10px 10px 0;
-    font-size: 15px;
-    font-family: cursive, sans-serif;
+    font-size: 10px;
+    font-family: "Press Start 2P", sans-serif;
     cursor: pointer;
     border: 2px;
     border-radius: 5px;
@@ -193,8 +187,6 @@ body {
       width: 90%;
       height: 100%;
     }
-    #game-image {
-      overflow: hidden;
-    }
+    
   }
   
