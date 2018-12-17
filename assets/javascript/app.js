@@ -7,15 +7,16 @@
 
 
   // document.getElementById("nesPic").style.cssText = "display: none";
-  
+   
   
   
   window.onSpotifyWebPlaybackSDKReady = () => {
-   const token = 'BQCN41-vpKmZKnvPdrP5CV2IgJW91HHM5VmNPxEYVOkn8pqAnAnNdXJ8rfFopHvJGtuoynKK94QgnLL32GdfW3eMpeajwfPqdO9bB3E3YtL2riRh4KEd-V6Ml9j2BbYshO8sPknGsQCOI1_DUJGE9KNLmRaQH0g';
+   const token = 'BQBRZOEC42iX9G0YKzc-KFgJXdg1Grrax_0PzfOJniJPNLWt0nZnRsZxOD5jJha6ytFNe4s_z0NFmnWpngXtcEhOnT1p-Y0HO7PmsMIGg6iS85hZpi2CGpdQzRZMvLZwKRNrNferdgd9y_fb1Y8JWxfVGdhwSVE';
    const player = new Spotify.Player({
      name: 'Web Playback SDK Quick Start Player',
      getOAuthToken: cb => { cb(token); }
    });
+  
    
    
    // Error handling
@@ -169,3 +170,5 @@
     
 
   
+
+
