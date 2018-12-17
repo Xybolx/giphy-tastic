@@ -42,9 +42,10 @@
    player.connect();
 
    $(document).ready(function() {
+    
   
   var games = [
-      "super mario bros.", "mike tyson's punch out", "kid icarus", "excitebike", "super mario bros. 2", "the legend of zelda", "mega man", "duck hunt", "double dragon", "spy hunter", "tecmo bowl", "contra"
+      "super mario bros.", "mike tyson's punch out", "kid icarus", "excitebike", "super mario bros. 2", "the legend of zelda", "mega man", "duck hunt", "double dragon"
       
     
 
@@ -131,18 +132,25 @@
     $("#add-game").on("click", function (event) {
           event.preventDefault();
           $("#addGif")[0].play();
-          var newGame = $("input").eq(0).val();
+          var newGame = $("input").val().trim();
+          
+          
+          
+          
+          
+          
+          if (newGame.length > 2) {
+            games.push(newGame);
+          database.ref().push(games);
+          console.log(games);
+          }
+        
+          
+          
+
+       
       
       
-      
-      
-      if (newGame.length > 2) {
-        games.push(newGame);
-        console.log(games);
-        localStorage.clear();
-        localStorage.setItem("newGames", JSON.stringify(games));
-        localStorage.getItem("newGames");
-      }
         
         
     
@@ -158,17 +166,18 @@
       
       
       populateButtons(games, "game-button", "#game-buttons");
-  });
+    });
     
-      
-      
+    
+    
     
     populateButtons(games, "game-button", "#game-buttons");
   });
+  
     
-}
+
     
 
   
 
-
+  }
